@@ -1,0 +1,24 @@
+{
+  "name": "85-day-9-backend-full-productiongrad-project",
+  "version": "1.0.0",
+  "description": "this an full fladge usere manegment and try to build youtube app clone",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "learningBackend",
+    "javascript"
+  ],
+  "author": "Tanvir Ahammad joy",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "mongoose": "^8.2.2",
+    "nodemon": "^3.1.0",
+    "prettier": "^3.2.5"
+  }
+}

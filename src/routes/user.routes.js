@@ -1,6 +1,7 @@
-import { Router } from "express";
+import { router } from "express";
 
+const router = router();
 
-
-
-const router = Router();
+router.route("/register").post(
+    
+);

@@ -27,7 +27,7 @@ const userSchema = new Schema(
     },
     avatar: {
       type: String, // cloudinary url
-      required: true,
+      // required: true,
     },
     coverImage: {
       type: String, // cloudinary url
@@ -88,4 +88,6 @@ userSchema.methods.generateRefreshToken = function () {
   );
 };
 
-export const User = mongoose.model("User", userSchema);
+const User = mongoose.model("User", userSchema);
+
+export default { User };

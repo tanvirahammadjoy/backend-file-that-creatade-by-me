@@ -7,7 +7,7 @@ dotenv.config({
   path: "../.env",
 });
 
-// const PORT = process.env.PORT || 3000; // Setting the port to listen on, default to 3000 if not provided in environment variables
+const PORT = process.env.PORT || 3000; // Setting the port to listen on, default to 3000 if not provided in environment variables
 
 // Connect to the MongoDB database
 connectDB()
@@ -25,6 +25,9 @@ connectDB()
     // Handle error if MongoDB connection fails
     console.log("MONGO db connection failed !!!", error);
   });
+
+
+
 
 /*
 import express from "express"

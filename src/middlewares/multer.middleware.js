@@ -4,10 +4,10 @@ import multer from "multer"; // Importing multer middleware for handling file up
 
 // Configuring storage: Multer allows you to define how files should be stored. In this code, it configures a disk storage engine using multer.diskStorage. This engine specifies where to store files on the server and how to name them.
 // Configuring storage engine for multer
-const storage = multer.diskStorage({
+let storage = multer.diskStorage({
   // Define destination directory for uploaded files
   destination: function (req, file, cb) {
-    cb(null, "./public/temp"); // Set destination directory to "./public/temp"
+    cb(null, "../public/temp"); // Set destination directory to "./public/temp"
   },
   // Define filename for uploaded files
   filename: function (req, file, cb) {
